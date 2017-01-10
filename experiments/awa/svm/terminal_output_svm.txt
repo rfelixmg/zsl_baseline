@@ -1,0 +1,710 @@
+
+
+
+Initializing application...
+
+
+################################################## 
+
+Configuration: 
+{
+    "#classes": 50, 
+    "#neighbors": 1, 
+    "baseline_model": "svm", 
+    "dataset": "./data/awa/", 
+    "dataset_attributes": "./data/awa/attributes/", 
+    "dataset_image": "./data/awa/images/", 
+    "dataset_text": "./data/awa/fine_grained_description/", 
+    "embedding": "./data/awa/features/", 
+    "embedding_attributes": "./data/awa/features/bow_attributes/feature.txt", 
+    "embedding_image": "./data/awa/features/lampert_vgg/feature.h5", 
+    "embedding_text": "./data/awa/features/bow_text/None", 
+    "estimated_values": false, 
+    "estimation_attributes": "./data/awa//attributes/class_attribute_labels_continuous.txt", 
+    "max_iter": 200, 
+    "n_estimators": 100, 
+    "n_jobs": -2, 
+    "number_epochs": 10, 
+    "output_file": "./experiments/awa/svm_evaluation_1nn.txt", 
+    "tag": "awa"
+}
+################################################## 
+
+-------------------------------------------------- 
+Loading data ...
+--------------------------------------------------
+
+##################################################
+Attributes shape:  (30475, 85)
+>>>>>> ./data/awa/features/lampert_vgg/feature.h5
+CNN shape:  (30475, 4096)
+Time (load dataset): 0.271848
+-------------------------------------------------- 
+Data loaded ...
+--------------------------------------------------
+-------------------------------------------------- 
+Training embedding model
+--------------------------------------------------
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3999.259329, rho = -0.001924
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3997.269750, rho = -0.002333
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3999.004638, rho = -0.002311
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3999.030542, rho = -0.001781
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.828006, rho = -0.001394
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3996.613199, rho = -0.002742
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.783594, rho = -0.001742
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3997.891432, rho = -0.004500
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3997.985077, rho = -0.004919
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3999.059314, rho = -0.002790
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3997.826749, rho = -0.003580
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3997.941804, rho = -0.002545
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3999.041104, rho = -0.002105
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.410088, rho = -0.000820
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3999.237704, rho = -0.001743
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3999.081188, rho = -0.002413
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3999.097395, rho = -0.000179
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3999.066967, rho = -0.001898
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.395169, rho = -0.003806
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3997.076994, rho = -0.001187
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3996.539801, rho = -0.001426
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3996.684414, rho = -0.000280
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3994.657898, rho = 0.000309
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3997.527152, rho = -0.002701
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.641175, rho = -0.002857
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3996.546054, rho = 0.000375
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.448771, rho = -0.001314
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3990.292448, rho = 0.004284
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3995.685136, rho = -0.003114
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.140615, rho = -0.002138
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3999.008775, rho = -0.003914
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3999.006230, rho = -0.002173
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3987.291616, rho = 0.003812
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3999.142778, rho = -0.001330
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3999.163657, rho = -0.003744
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3999.138516, rho = -0.001519
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3992.975056, rho = -0.002511
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3996.359158, rho = -0.003053
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.594636, rho = -0.001246
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3997.826266, rho = 0.000474
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.958826, rho = -0.003696
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3999.327761, rho = -0.002042
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3999.007648, rho = -0.003206
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3999.053097, rho = -0.001835
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3992.749083, rho = 0.002417
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.088253, rho = -0.000154
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.563337, rho = -0.000298
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.812795, rho = -0.001813
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.713189, rho = -0.003431
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.531634, rho = -0.002846
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.188853, rho = -0.004080
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.987925, rho = -0.002100
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3986.075312, rho = 0.004250
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3996.343857, rho = -0.000861
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.838627, rho = -0.001197
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3999.098474, rho = -0.002645
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3994.678885, rho = -0.003617
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.655176, rho = -0.002889
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3997.533381, rho = -0.002257
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3962.036866, rho = 0.001775
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3987.565476, rho = 0.002058
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3996.783262, rho = -0.000419
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3996.804655, rho = -0.000897
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3996.609044, rho = 0.001076
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3999.216223, rho = -0.001819
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3999.134392, rho = -0.001723
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3996.359158, rho = -0.003053
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.879665, rho = -0.001934
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3999.245214, rho = -0.001752
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.468745, rho = -0.002846
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3996.565825, rho = 0.003597
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3996.308887, rho = -0.003751
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.563337, rho = -0.000298
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3997.335964, rho = -0.003572
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3996.784985, rho = -0.002765
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3996.359158, rho = -0.003053
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.475784, rho = -0.003704
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.824787, rho = -0.003017
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3993.552017, rho = 0.001170
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3995.570827, rho = 0.002488
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3997.016585, rho = 0.002687
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.040700, rho = -0.000725
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3999.001104, rho = -0.002174
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3998.791134, rho = -0.002989
+nSV = 400, nBSV = 400
+Total nSV = 400
+[LibSVM]WARN: libsvm Solver reached max_iter
+optimization finished, #iter = 200
+obj = -3994.252902, rho = 0.000300
+nSV = 400, nBSV = 400
+Total nSV = 400
+Time (load training): 907.897120
+-------------------------------------------------- 
+Embedding model Trained
+--------------------------------------------------
+Coeficient of Determination (training):  0.0
+Coeficient of Determination (validation):  0.0
+Coeficient of Determination (testing):  0.0
+-------------------------------------------------- 
+Training distance model
+--------------------------------------------------
+>> Training with attributes data
+-------------------------------------------------- 
+Distance model trained
+--------------------------------------------------
+-------------------------------------------------- 
+Running Zero-Shot Learning
+--------------------------------------------------
+-------------------------------------------------- 
+Running Evaluation
+--------------------------------------------------
+-------------------------------------------------- 
+Running Evaluation per Class
+--------------------------------------------------
+{
+    "accuracy_test": 0.0062881782249371186, 
+    "accuracy_train": 0.084125388411624938, 
+    "accuracy_valid": 0.071074380165289261, 
+    "coeficient_determination_test": 0.0, 
+    "coeficient_determination_train": 0.0, 
+    "coeficient_determination_valid": 0.0, 
+    "precision_test": 0.10659741924564059, 
+    "precision_train": 0.094384221344564687, 
+    "precision_valid": 0.060091601428545728, 
+    "recall_test": 0.0062881782249371186, 
+    "recall_train": 0.084125388411624938, 
+    "recall_valid": 0.071074380165289261, 
+    "~evaluation_per_class": {
+        "5": {
+            "accuracy": 0.88591448077614088, 
+            "precision": 0.59999999999999998, 
+            "recall": 0.037325038880248837
+        }, 
+        "13": {
+            "accuracy": 0.88268056054617317, 
+            "precision": 0.0, 
+            "recall": 0.0
+        }, 
+        "14": {
+            "accuracy": 0.90154509522098458, 
+            "precision": 0.0, 
+            "recall": 0.0
+        }, 
+        "17": {
+            "accuracy": 0.88411785842615886, 
+            "precision": 0.0, 
+            "recall": 0.0
+        }, 
+        "23": {
+            "accuracy": 0.9112468559108875, 
+            "precision": 0.1111111111111111, 
+            "recall": 0.010893246187363835
+        }, 
+        "24": {
+            "accuracy": 0.88663312971613362, 
+            "precision": 0.0, 
+            "recall": 0.0
+        }, 
+        "33": {
+            "accuracy": 0.9500538986704995, 
+            "precision": 0.0, 
+            "recall": 0.0
+        }, 
+        "38": {
+            "accuracy": 0.83542939274164574, 
+            "precision": 0.040540540540540543, 
+            "recall": 0.0035377358490566039
+        }, 
+        "41": {
+            "accuracy": 0.94646065397053536, 
+            "precision": 0.0, 
+            "recall": 0.0
+        }, 
+        "47": {
+            "accuracy": 0.89615522817103843, 
+            "precision": 0.21428571428571427, 
+            "recall": 0.005263157894736842
+        }
+    }
+}
+{33: {'thresholds': array([50, 49, 48, 47, 46, 45, 44, 40, 39, 38, 37, 36, 35, 33, 32, 31, 30,
+       27, 26, 25, 23, 22, 21, 18, 16, 15, 13, 12,  7,  6,  5,  2,  1,  0]), 'confusion_matrix': array([[5288,    5],
+       [ 273,    0]]), 'tpr': array([ 0.        ,  0.        ,  0.08424908,  0.08791209,  0.09157509,
+        0.09157509,  0.0989011 ,  0.0989011 ,  0.11355311,  0.12087912,
+        0.30769231,  0.30769231,  0.31501832,  0.31501832,  0.32600733,
+        0.63003663,  0.73992674,  0.73992674,  0.74358974,  0.75824176,
+        0.7985348 ,  0.84615385,  0.84615385,  0.84615385,  0.9047619 ,
+        0.9047619 ,  0.90842491,  0.90842491,  0.90842491,  0.90842491,
+        0.90842491,  0.94871795,  1.        ,  1.        ]), 'fpr': array([ 0.        ,  0.00510108,  0.13243907,  0.13489514,  0.14396373,
+        0.14793123,  0.20706594,  0.21027773,  0.21575666,  0.22935953,
+        0.43415832,  0.43831476,  0.49008124,  0.49102588,  0.5068959 ,
+        0.62856603,  0.74400151,  0.74683544,  0.75873796,  0.76497261,
+        0.77139618,  0.7774419 ,  0.77819762,  0.78310977,  0.91384848,
+        0.91403741,  0.91422634,  0.91535991,  0.91611562,  0.95068959,
+        0.95824674,  0.97203854,  0.99848857,  1.        ])}, 5: {'thresholds': array([50, 49, 48, 47, 46, 45, 44, 40, 39, 38, 37, 36, 35, 33, 32, 31, 30,
+       27, 26, 25, 23, 22, 21, 18, 16, 15, 13, 12,  9,  7,  6,  5,  2,  1,
+        0]), 'confusion_matrix': array([[4907,   16],
+       [ 619,   24]]), 'tpr': array([ 0.        ,  0.00466563,  0.02332815,  0.02954899,  0.02954899,
+        0.04821151,  0.06998445,  0.07620529,  0.07620529,  0.07620529,
+        0.55520995,  0.55520995,  0.62986003,  0.63141524,  0.63141524,
+        0.67651633,  0.68584759,  0.70762053,  0.70762053,  0.71073095,
+        0.73716952,  0.74494557,  0.74494557,  0.75738725,  0.80093313,
+        0.80248834,  0.80248834,  0.80248834,  0.80404355,  0.80404355,
+        0.88646967,  0.92379471,  0.92846034,  0.99066874,  1.        ]), 'fpr': array([ 0.        ,  0.00487508,  0.14401788,  0.14604916,  0.15600244,
+        0.15783059,  0.21897217,  0.22161284,  0.22831607,  0.24334755,
+        0.41133455,  0.41580337,  0.4621166 ,  0.46292911,  0.48060126,
+        0.62238472,  0.75137112,  0.75157424,  0.76457445,  0.77168393,
+        0.77737152,  0.78549665,  0.78630916,  0.78996547,  0.92809263,
+        0.92809263,  0.92849888,  0.92971765,  0.92992078,  0.93032704,
+        0.9567337 ,  0.95998375,  0.97643713,  0.99959374,  1.        ])}, 38: {'thresholds': array([50, 49, 48, 47, 46, 45, 44, 40, 39, 38, 37, 36, 35, 33, 32, 31, 30,
+       27, 26, 25, 22, 21, 18, 16, 15, 13, 12,  7,  6,  5,  2,  1,  0]), 'confusion_matrix': array([[4647,   71],
+       [ 845,    3]]), 'tpr': array([ 0.        ,  0.        ,  0.56957547,  0.56957547,  0.60259434,
+        0.60259434,  0.65919811,  0.65919811,  0.66037736,  0.66391509,
+        0.72523585,  0.72523585,  0.72523585,  0.72523585,  0.72523585,
+        0.80070755,  0.80542453,  0.80542453,  0.80542453,  0.80542453,
+        0.80542453,  0.80542453,  0.80542453,  0.875     ,  0.875     ,
+        0.875     ,  0.875     ,  0.875     ,  0.87617925,  0.87617925,
+        0.92806604,  1.        ,  1.        ]), 'fpr': array([ 0.        ,  0.00572276,  0.05108097,  0.05404833,  0.05849936,
+        0.0629504 ,  0.11954218,  0.1231454 ,  0.12992794,  0.14497669,
+        0.3745231 ,  0.3791861 ,  0.43768546,  0.43874523,  0.45718525,
+        0.59771089,  0.73272573,  0.73590504,  0.74947011,  0.75731242,
+        0.7763883 ,  0.77723612,  0.78274693,  0.92030521,  0.92051717,
+        0.92094108,  0.9222128 ,  0.92306062,  0.96163629,  0.97011446,
+        0.97859262,  0.99830437,  1.        ])}, 41: {'thresholds': array([50, 49, 48, 47, 46, 45, 44, 40, 39, 38, 37, 36, 35, 33, 32, 31, 30,
+       27, 26, 25, 23, 22, 21, 18, 16, 15, 13, 12,  7,  6,  5,  2,  1,  0]), 'confusion_matrix': array([[5268,    0],
+       [ 298,    0]]), 'tpr': array([ 0.        ,  0.        ,  0.11744966,  0.12751678,  0.12751678,
+        0.12751678,  0.19127517,  0.20469799,  0.24832215,  0.25503356,
+        0.4261745 ,  0.4295302 ,  0.43959732,  0.43959732,  0.46979866,
+        0.64765101,  0.68456376,  0.68456376,  0.71812081,  0.74161074,
+        0.75503356,  0.77181208,  0.77516779,  0.77516779,  0.83892617,
+        0.83892617,  0.84228188,  0.84563758,  0.84563758,  0.92281879,
+        0.9261745 ,  0.94630872,  0.9966443 ,  1.        ]), 'fpr': array([ 0.        ,  0.00512528,  0.13078967,  0.13287775,  0.1421792 ,
+        0.14616553,  0.20235383,  0.20482156,  0.20861807,  0.2222855 ,
+        0.42805619,  0.43204252,  0.48386484,  0.48481397,  0.49962035,
+        0.62756264,  0.74715262,  0.75      ,  0.76025057,  0.76594533,
+        0.77372817,  0.78132118,  0.78189066,  0.78682612,  0.91761579,
+        0.91780562,  0.91799544,  0.91894457,  0.91970387,  0.95007593,
+        0.95747912,  0.9722855 ,  0.99867122,  1.        ])}, 13: {'thresholds': array([50, 49, 48, 47, 46, 45, 44, 40, 39, 38, 37, 36, 35, 33, 32, 31, 30,
+       27, 26, 25, 23, 22, 21, 18, 16, 15, 13, 12,  7,  6,  5,  2,  1,  0]), 'confusion_matrix': array([[4913,    2],
+       [ 651,    0]]), 'tpr': array([ 0.        ,  0.01996928,  0.05529954,  0.05529954,  0.05837174,
+        0.05990783,  0.15975422,  0.17204301,  0.17511521,  0.21505376,
+        0.30875576,  0.31643625,  0.38556068,  0.39170507,  0.4546851 ,
+        0.69124424,  0.69738863,  0.69738863,  0.77265745,  0.78801843,
+        0.78955453,  0.80030722,  0.80030722,  0.81259601,  0.84485407,
+        0.84485407,  0.84485407,  0.85253456,  0.85253456,  0.99231951,
+        0.99231951,  0.9969278 ,  1.        ,  1.        ]), 'fpr': array([ 0.        ,  0.00284842,  0.13997965,  0.14282808,  0.15239064,
+        0.15645982,  0.20732452,  0.20915565,  0.21546287,  0.22522889,
+        0.44374364,  0.44720244,  0.49420142,  0.49440488,  0.50376399,
+        0.62034588,  0.74994914,  0.75300102,  0.7560529 ,  0.76154629,
+        0.77049847,  0.77822991,  0.77904374,  0.782706  ,  0.9224822 ,
+        0.92268566,  0.92309257,  0.92329603,  0.92410987,  0.94282808,
+        0.95096643,  0.96744659,  0.99837233,  1.        ])}, 14: {'thresholds': array([50, 49, 48, 47, 46, 45, 44, 40, 39, 38, 37, 36, 35, 33, 32, 31, 30,
+       27, 26, 25, 23, 22, 21, 18, 16, 15, 13, 12,  9,  7,  6,  5,  2,  1,
+        0]), 'confusion_matrix': array([[5018,    0],
+       [ 548,    0]]), 'tpr': array([ 0.        ,  0.        ,  0.        ,  0.00182482,  0.00182482,
+        0.00182482,  0.00364964,  0.00364964,  0.00364964,  0.00364964,
+        0.04379562,  0.04379562,  0.04744526,  0.04744526,  0.04744526,
+        0.05109489,  0.98540146,  0.98540146,  0.98540146,  0.98905109,
+        0.98905109,  0.99087591,  0.99087591,  0.99087591,  0.99087591,
+        0.99087591,  0.99087591,  0.99087591,  0.99087591,  0.99270073,
+        0.99635036,  0.99635036,  0.99635036,  1.        ,  1.        ]), 'fpr': array([ 0.        ,  0.00538063,  0.14428059,  0.14687126,  0.15663611,
+        0.16082104,  0.22339578,  0.22678358,  0.2333599 ,  0.24810682,
+        0.46990833,  0.47429255,  0.52889597,  0.52989239,  0.54722997,
+        0.69170984,  0.7174173 ,  0.72040654,  0.73316062,  0.74013551,
+        0.74910323,  0.75787166,  0.75866879,  0.76385014,  0.90494221,
+        0.90514149,  0.90554006,  0.90673575,  0.90713432,  0.9073336 ,
+        0.94340375,  0.95137505,  0.96811479,  0.99840574,  1.        ])}, 47: {'thresholds': array([50, 49, 48, 47, 46, 45, 44, 40, 39, 38, 37, 36, 35, 33, 32, 31, 30,
+       27, 26, 25, 23, 22, 21, 18, 16, 15, 13, 12,  7,  6,  5,  2,  1,  0]), 'confusion_matrix': array([[4985,   11],
+       [ 567,    3]]), 'tpr': array([ 0.        ,  0.00701754,  0.08245614,  0.0877193 ,  0.1122807 ,
+        0.11578947,  0.12105263,  0.12280702,  0.13859649,  0.20350877,
+        0.54912281,  0.54912281,  0.58070175,  0.58070175,  0.58070175,
+        0.7       ,  0.78245614,  0.78421053,  0.78421053,  0.7877193 ,
+        0.79122807,  0.8122807 ,  0.8122807 ,  0.8122807 ,  0.96315789,
+        0.96315789,  0.96315789,  0.96315789,  0.96315789,  0.97192982,
+        0.9754386 ,  0.9877193 ,  1.        ,  1.        ]), 'fpr': array([ 0.        ,  0.00460368,  0.13550841,  0.13771017,  0.14471577,
+        0.14851882,  0.21096878,  0.21417134,  0.21897518,  0.2263811 ,
+        0.41413131,  0.41853483,  0.47017614,  0.47117694,  0.48859087,
+        0.6204964 ,  0.73939151,  0.74219376,  0.755004  ,  0.76200961,
+        0.77061649,  0.77722178,  0.77802242,  0.78322658,  0.90772618,
+        0.90792634,  0.90832666,  0.90952762,  0.91032826,  0.94595677,
+        0.95356285,  0.96897518,  0.99839872,  1.        ])}, 17: {'thresholds': array([50, 49, 48, 47, 46, 45, 44, 40, 39, 38, 37, 36, 35, 33, 32, 31, 30,
+       27, 26, 25, 23, 22, 21, 18, 16, 15, 13, 12,  7,  6,  5,  2,  1,  0]), 'confusion_matrix': array([[4921,    0],
+       [ 645,    0]]), 'tpr': array([ 0.        ,  0.01085271,  0.02790698,  0.02790698,  0.02790698,
+        0.02945736,  0.15658915,  0.15658915,  0.15658915,  0.15968992,
+        0.5255814 ,  0.54883721,  0.6372093 ,  0.6372093 ,  0.65581395,
+        0.88992248,  0.91627907,  0.91627907,  0.91937984,  0.92248062,
+        0.92713178,  0.92713178,  0.92868217,  0.93178295,  0.97829457,
+        0.97829457,  0.97829457,  0.97829457,  0.97829457,  0.98139535,
+        0.98604651,  0.99379845,  0.99844961,  1.        ]), 'fpr': array([ 0.        ,  0.00406421,  0.14346678,  0.14631173,  0.15626905,
+        0.16033327,  0.20768137,  0.21113595,  0.2178419 ,  0.23247307,
+        0.41515952,  0.416582  ,  0.46108515,  0.4621012 ,  0.477342  ,
+        0.59439138,  0.72119488,  0.72424304,  0.73684211,  0.74395448,
+        0.75248933,  0.76163381,  0.76224345,  0.7671205 ,  0.90489738,
+        0.90510059,  0.90550701,  0.90672628,  0.90753912,  0.94432026,
+        0.95183906,  0.9678927 ,  0.99857752,  1.        ])}, 23: {'thresholds': array([50, 49, 48, 47, 46, 45, 44, 40, 39, 38, 37, 36, 35, 33, 32, 31, 30,
+       27, 26, 25, 23, 22, 21, 18, 16, 15, 13, 12,  9,  7,  6,  5,  2,  1,
+        0]), 'confusion_matrix': array([[5067,   40],
+       [ 454,    5]]), 'tpr': array([ 0.        ,  0.        ,  0.11111111,  0.11546841,  0.11546841,
+        0.12636166,  0.16993464,  0.16993464,  0.17864924,  0.18300654,
+        0.41176471,  0.41394336,  0.59912854,  0.59912854,  0.64705882,
+        0.8496732 ,  0.87145969,  0.87145969,  0.87363834,  0.89106754,
+        0.90196078,  0.90413943,  0.90631808,  0.91285403,  0.96078431,
+        0.96078431,  0.96078431,  0.96078431,  0.96078431,  0.96296296,
+        0.96514161,  0.96732026,  0.97821351,  1.        ,  1.        ]), 'fpr': array([ 0.        ,  0.00528686,  0.13177991,  0.13412963,  0.1437243 ,
+        0.14685725,  0.20462111,  0.20794987,  0.21362835,  0.22772665,
+        0.42941061,  0.43352262,  0.47092226,  0.47190131,  0.48462894,
+        0.60877227,  0.73232818,  0.73526532,  0.74760133,  0.75327981,
+        0.7611122 ,  0.76972782,  0.77031525,  0.77481888,  0.90914431,
+        0.90934012,  0.90973174,  0.9109066 ,  0.91129822,  0.91149403,
+        0.94713139,  0.95476797,  0.97023693,  0.99843352,  1.        ])}, 24: {'thresholds': array([50, 49, 48, 47, 46, 45, 44, 40, 39, 38, 37, 36, 35, 33, 32, 31, 30,
+       27, 26, 25, 23, 22, 21, 18, 16, 15, 13, 12,  9,  7,  6,  5,  2,  1,
+        0]), 'confusion_matrix': array([[4935,    0],
+       [ 631,    0]]), 'tpr': array([ 0.        ,  0.        ,  0.02535658,  0.02535658,  0.03169572,
+        0.03169572,  0.12836767,  0.12836767,  0.12836767,  0.12836767,
+        0.21077655,  0.21077655,  0.23613312,  0.23613312,  0.23613312,
+        0.2836767 ,  0.2836767 ,  0.2836767 ,  0.28526149,  0.28526149,
+        0.28843106,  0.29001585,  0.29160063,  0.29952456,  0.97622821,
+        0.97622821,  0.97622821,  0.97622821,  0.977813  ,  0.977813  ,
+        0.98573693,  1.        ,  1.        ,  1.        ,  1.        ]), 'fpr': array([ 0.        ,  0.00547112,  0.14346505,  0.14630193,  0.15542047,
+        0.15967579,  0.21114488,  0.21458967,  0.2212766 ,  0.23627153,
+        0.45572442,  0.46018237,  0.51286727,  0.51388045,  0.53150963,
+        0.67274569,  0.80263425,  0.80567376,  0.81843972,  0.82593718,
+        0.83465046,  0.84356636,  0.84417427,  0.84842958,  0.90536981,
+        0.90557244,  0.90597771,  0.90719352,  0.90739615,  0.90780142,
+        0.94387031,  0.95015198,  0.96717325,  0.99837893,  1.        ])}}
+Total (time): 10006.180786
+---
+Closing application ...
+

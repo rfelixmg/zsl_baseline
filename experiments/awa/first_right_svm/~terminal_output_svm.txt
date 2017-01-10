@@ -1,0 +1,749 @@
+
+
+
+Initializing application...
+
+
+################################################## 
+
+Configuration: 
+{
+    "#classes": 50, 
+    "#neighbors": 1, 
+    "baseline_model": "svm", 
+    "dataset": "./data/awa/", 
+    "dataset_attributes": "./data/awa/attributes/", 
+    "dataset_image": "./data/awa/images/", 
+    "dataset_text": "./data/awa/fine_grained_description/", 
+    "embedding": "./data/awa/features/", 
+    "embedding_attributes": "./data/awa/features/bow_attributes/feature.txt", 
+    "embedding_image": "./data/awa/features/lampert_vgg/feature.h5", 
+    "embedding_text": "./data/awa/features/bow_text/None", 
+    "estimated_values": false, 
+    "estimation_attributes": "./data/awa//attributes/class_attribute_labels_continuous.txt", 
+    "n_estimators": 100, 
+    "n_jobs": -2, 
+    "number_epochs": 10, 
+    "output_file": "./experiments/awa/svm_evaluation_1nn.txt", 
+    "tag": "awa"
+}
+################################################## 
+
+-------------------------------------------------- 
+Loading data ...
+--------------------------------------------------
+
+##################################################
+Attributes shape:  (30475, 85)
+>>>>>> ./data/awa/features/lampert_vgg/feature.h5
+CNN shape:  (30475, 4096)
+Time (load dataset): 8.915481
+-------------------------------------------------- 
+Data loaded ...
+--------------------------------------------------
+-------------------------------------------------- 
+Training embedding model
+--------------------------------------------------
+[LibSVM]*
+optimization finished, #iter = 542
+obj = -7797.290750, rho = -1.012383
+nSV = 831, nBSV = 730
+Total nSV = 831
+[LibSVM].[LibSVM].[LibSVM].[LibSVM].[LibSVM].[LibSVM].[LibSVM].
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 1980
+obj = -30598.883257, rho = -1.003225
+nSV = 3176, nBSV = 2984
+Total nSV = 3176
+......
+Warning: using -h 0 may be faster
+**.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 2899
+obj = -47750.612712, rho = -1.006229
+nSV = 4902, nBSV = 4744
+Total nSV = 4902
+[LibSVM].....
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 2990
+obj = -50591.159505, rho = -1.036423
+nSV = 5233, nBSV = 5111
+Total nSV = 5233
+[LibSVM]......[LibSVM].......
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 2105
+obj = -34272.015786, rho = -1.007625
+nSV = 3532, nBSV = 3401
+Total nSV = 3532
+......[LibSVM].................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 8815
+obj = -154191.651591, rho = -0.602012
+nSV = 17386, nBSV = 17360
+Total nSV = 17386
+....
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 9366
+obj = -159295.523100, rho = 0.829635
+nSV = 17029, nBSV = 16987
+Total nSV = 17029
+
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+**.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 6919
+obj = -117881.743020, rho = -0.778735
+nSV = 12537, nBSV = 12466
+Total nSV = 12537
+.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 9818
+obj = -164083.322743, rho = 0.305125
+nSV = 18648, nBSV = 18618
+Total nSV = 18648
+[LibSVM]...[LibSVM].
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 10427
+obj = -178275.397625, rho = -0.078197
+nSV = 20402, nBSV = 20382
+Total nSV = 20402
+[LibSVM].
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 8972
+obj = -148669.834237, rho = -0.490569
+nSV = 16641, nBSV = 16597
+Total nSV = 16641
+[LibSVM]..
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 5902
+obj = -90016.537646, rho = 0.988443
+nSV = 9349, nBSV = 9254
+Total nSV = 9349
+.[LibSVM]..[LibSVM]...[LibSVM]........
+Warning: using -h 0 may be faster
+**.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 2483
+obj = -39261.750361, rho = -0.990575
+nSV = 4057, nBSV = 3839
+Total nSV = 4057
+....
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+.*.*
+optimization finished, #iter = 5116
+obj = -91199.630747, rho = -0.988558
+nSV = 9455, nBSV = 9363
+Total nSV = 9455
+[LibSVM]...
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 1421
+obj = -23519.617673, rho = -1.014703
+nSV = 2434, nBSV = 2284
+Total nSV = 2434
+...[LibSVM]...[LibSVM]............
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 7723
+obj = -120078.266119, rho = 0.829376
+nSV = 12958, nBSV = 12903
+Total nSV = 12958
+......[LibSVM].
+Warning: using -h 0 may be faster
+*...
+Warning: using -h 0 may be faster
+**.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 8737
+obj = -144630.454526, rho = -0.626209
+nSV = 15785, nBSV = 15732
+Total nSV = 15785
+...
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 9763
+obj = -173236.396294, rho = -0.605740
+nSV = 19236, nBSV = 19215
+Total nSV = 19236
+...[LibSVM]...[LibSVM]...
+Warning: using -h 0 may be faster
+**.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 10072
+obj = -175071.872773, rho = -0.176988
+nSV = 19587, nBSV = 19574
+Total nSV = 19587
+....
+Warning: using -h 0 may be faster
+
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 10308
+obj = -178152.623484, rho = 0.001999
+nSV = 20153, nBSV = 20129
+Total nSV = 20153
+*.
+Warning: using -h 0 may be faster
+.*
+optimization finished, #iter = 7456
+obj = -130164.362021, rho = -0.846651
+nSV = 13453, nBSV = 13339
+Total nSV = 13453
+..[LibSVM]..
+Warning: using -h 0 may be faster
+*..[LibSVM].
+Warning: using -h 0 may be faster
+[LibSVM].**.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 7848
+obj = -132371.129282, rho = -0.801539
+nSV = 14054, nBSV = 13970
+Total nSV = 14054
+...
+Warning: using -h 0 may be faster
+*..
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 4183
+obj = -71093.276030, rho = -0.950389
+nSV = 7326, nBSV = 7191
+Total nSV = 7326
+.[LibSVM].....[LibSVM].............
+Warning: using -h 0 may be faster
+**.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 2550
+obj = -42024.478570, rho = -1.001179
+nSV = 4335, nBSV = 4213
+Total nSV = 4335
+....
+Warning: using -h 0 may be faster
+
+Warning: using -h 0 may be faster
+*.*.
+Warning: using -h 0 may be faster
+[LibSVM].
+Warning: using -h 0 may be faster
+*.*
+optimization finished, #iter = 6107
+obj = -89752.667528, rho = 0.991186
+nSV = 9320, nBSV = 9213
+Total nSV = 9320
+
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 8192
+obj = -149179.891598, rho = -0.898222
+nSV = 15282, nBSV = 15175
+Total nSV = 15282
+
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 5921
+obj = -87391.787313, rho = 1.009439
+nSV = 9274, nBSV = 9200
+Total nSV = 9274
+....
+Warning: using -h 0 may be faster
+[LibSVM].[LibSVM].*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 5567
+obj = -92632.695239, rho = -0.886756
+nSV = 9725, nBSV = 9633
+Total nSV = 9725
+
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 10338
+obj = -179296.970064, rho = 0.294983
+nSV = 20373, nBSV = 20355
+Total nSV = 20373
+
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 1383
+obj = -22662.236270, rho = -1.011176
+nSV = 2383, nBSV = 2153
+Total nSV = 2383
+[LibSVM].[LibSVM]*
+optimization finished, #iter = 436
+obj = -6278.927791, rho = -1.001642
+nSV = 731, nBSV = 548
+Total nSV = 731
+...[LibSVM].[LibSVM]..[LibSVM]..
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 1750
+obj = -31117.915828, rho = -1.012741
+nSV = 3301, nBSV = 3256
+Total nSV = 3301
+.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 1679
+obj = -26720.396582, rho = -1.027472
+nSV = 2760, nBSV = 2661
+Total nSV = 2760
+....[LibSVM]..[LibSVM]..
+Warning: using -h 0 may be faster
+
+Warning: using -h 0 may be faster
+*.*.
+Warning: using -h 0 may be faster
+
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 5443
+obj = -89630.818683, rho = -0.935665
+nSV = 9193, nBSV = 9039
+Total nSV = 9193
+**.*
+optimization finished, #iter = 9556
+obj = -166559.891039, rho = -0.663490
+nSV = 18417, nBSV = 18386
+Total nSV = 18417
+.....
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 4035
+obj = -67009.152305, rho = -1.002539
+nSV = 7027, nBSV = 6924
+Total nSV = 7027
+[LibSVM].[LibSVM].....[LibSVM].
+Warning: using -h 0 may be faster
+..*
+optimization finished, #iter = 3557
+obj = -48501.905959, rho = 1.010271
+nSV = 5003, nBSV = 4889
+Total nSV = 5003
+.....[LibSVM].........
+Warning: using -h 0 may be faster
+.*
+optimization finished, #iter = 5542
+obj = -80850.864854, rho = 1.010249
+nSV = 8248, nBSV = 8031
+Total nSV = 8248
+
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 3763
+obj = -64122.516162, rho = -1.015526
+nSV = 6593, nBSV = 6486
+Total nSV = 6593
+.....[LibSVM].
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+**.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 9457
+obj = -166895.764562, rho = -0.584881
+nSV = 18266, nBSV = 18231
+Total nSV = 18266
+[LibSVM]......[LibSVM].
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 10464
+obj = -185332.216854, rho = -0.501153
+nSV = 20313, nBSV = 20286
+Total nSV = 20313
+....
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 2803
+obj = -38787.117424, rho = 1.001777
+nSV = 3982, nBSV = 3849
+Total nSV = 3982
+.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 7385
+obj = -115068.354401, rho = 0.798460
+nSV = 12273, nBSV = 12211
+Total nSV = 12273
+.[LibSVM]...[LibSVM]..[LibSVM]..
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 4416
+obj = -75040.150584, rho = -0.962670
+nSV = 7901, nBSV = 7819
+Total nSV = 7901
+....
+Warning: using -h 0 may be faster
+.*..[LibSVM].
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 9530
+obj = -165121.427711, rho = -0.579559
+nSV = 18294, nBSV = 18250
+Total nSV = 18294
+......[LibSVM].............
+Warning: using -h 0 may be faster
+*.
+optimization finished, #iter = 10281
+obj = -169312.477598, rho = 0.565452
+nSV = 18376, nBSV = 18332
+Total nSV = 18376
+.
+Warning: using -h 0 may be faster
+*..
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 5697
+obj = -94577.924561, rho = -1.011655
+nSV = 9655, nBSV = 9438
+Total nSV = 9655
+
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 7359
+obj = -120692.783786, rho = 0.934306
+nSV = 12409, nBSV = 12306
+Total nSV = 12409
+
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 5903
+obj = -95426.852648, rho = -0.957908
+nSV = 9958, nBSV = 9835
+Total nSV = 9958
+.[LibSVM]..[LibSVM]..[LibSVM].[LibSVM].
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 1660
+obj = -26058.520363, rho = -0.998811
+nSV = 2720, nBSV = 2540
+Total nSV = 2720
+
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 1737
+obj = -23192.533541, rho = -1.001726
+nSV = 2621, nBSV = 2072
+Total nSV = 2621
+.....[LibSVM].[LibSVM].........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 7184
+obj = -126386.674139, rho = -0.866118
+nSV = 13356, nBSV = 13300
+Total nSV = 13356
+
+Warning: using -h 0 may be faster
+*..
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 9812
+obj = -165049.263467, rho = -0.159830
+nSV = 18786, nBSV = 18755
+Total nSV = 18786
+....
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 8959
+obj = -143924.929433, rho = 0.816593
+nSV = 15073, nBSV = 14991
+Total nSV = 15073
+[LibSVM].[LibSVM].....[LibSVM]*
+optimization finished, #iter = 975
+obj = -17420.285119, rho = -1.015023
+nSV = 1815, nBSV = 1713
+Total nSV = 1815
+......[LibSVM]..
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 3049
+obj = -44097.021267, rho = -1.044205
+nSV = 4637, nBSV = 4524
+Total nSV = 4637
+......[LibSVM]....
+Warning: using -h 0 may be faster
+.*.
+Warning: using -h 0 may be faster
+*...
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 9216
+obj = -159557.527260, rho = -0.857549
+nSV = 17088, nBSV = 17037
+Total nSV = 17088
+....[LibSVM]....
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 10275
+obj = -171572.624510, rho = 0.777886
+nSV = 18421, nBSV = 18381
+Total nSV = 18421
+.
+Warning: using -h 0 may be faster
+*...
+Warning: using -h 0 may be faster
+.*.*
+optimization finished, #iter = 5132
+obj = -82486.269684, rho = -1.022891
+nSV = 8693, nBSV = 8584
+Total nSV = 8693
+.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+**.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 9476
+obj = -167657.964247, rho = -0.537787
+nSV = 18074, nBSV = 18026
+Total nSV = 18074
+
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 2640
+obj = -36837.041034, rho = 1.002007
+nSV = 3805, nBSV = 3705
+Total nSV = 3805
+[LibSVM]..
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 10129
+obj = -169769.109281, rho = 0.261114
+nSV = 19322, nBSV = 19294
+Total nSV = 19322
+[LibSVM]*
+optimization finished, #iter = 700
+obj = -8598.735566, rho = -1.001081
+nSV = 1079, nBSV = 705
+Total nSV = 1079
+.[LibSVM].
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+**.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 8249
+obj = -134379.212165, rho = -0.945503
+nSV = 14236, nBSV = 14134
+Total nSV = 14236
+[LibSVM]...[LibSVM].[LibSVM]..[LibSVM]...
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 6899
+obj = -104055.686181, rho = 0.986147
+nSV = 10600, nBSV = 10411
+Total nSV = 10600
+...
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+**.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 3398
+obj = -49763.742262, rho = -1.006817
+nSV = 5241, nBSV = 5117
+Total nSV = 5241
+...[LibSVM]...[LibSVM]..
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 5075
+obj = -74577.706318, rho = -0.982789
+nSV = 7736, nBSV = 7550
+Total nSV = 7736
+......[LibSVM]...........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 6407
+obj = -111532.907755, rho = -0.922832
+nSV = 11658, nBSV = 11558
+Total nSV = 11658
+....
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+**.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 3505
+obj = -51294.720178, rho = -1.006592
+nSV = 5395, nBSV = 5268
+Total nSV = 5395
+.[LibSVM].....[LibSVM].
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 5708
+obj = -101353.635824, rho = -0.976741
+nSV = 10578, nBSV = 10500
+Total nSV = 10578
+...
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 6396
+obj = -111129.398417, rho = -1.021312
+nSV = 11343, nBSV = 11198
+Total nSV = 11343
+..
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+**.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 8324
+obj = -150775.909149, rho = -0.775896
+nSV = 15767, nBSV = 15693
+Total nSV = 15767
+.[LibSVM].
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+**.*
+optimization finished, #iter = 8899
+obj = -154109.673744, rho = -0.597319
+nSV = 16610, nBSV = 16549
+Total nSV = 16610
+.[LibSVM].
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 3686
+obj = -50614.588815, rho = 0.992903
+nSV = 5195, nBSV = 4994
+Total nSV = 5195
+[LibSVM]..
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 1806
+obj = -27417.169825, rho = -1.027517
+nSV = 2841, nBSV = 2714
+Total nSV = 2841
+.[LibSVM]..
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 4035
+obj = -67009.152305, rho = -1.002539
+nSV = 7027, nBSV = 6924
+Total nSV = 7027
+.......
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 5357
+obj = -92309.501554, rho = -0.964758
+nSV = 9434, nBSV = 9322
+Total nSV = 9434
+........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+**.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 8513
+obj = -139579.597365, rho = -0.765843
+nSV = 15588, nBSV = 15540
+Total nSV = 15588
+.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 8180
+obj = -123786.483937, rho = 0.906707
+nSV = 13685, nBSV = 13632
+Total nSV = 13685
+
+Traceback (most recent call last):
+  File "/home/rfelixmg/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/home/rfelixmg/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/home/rfelixmg/anaconda2/lib/python2.7/multiprocessing/pool.py", line 326, in _handle_workers
+    pool._maintain_pool()
+  File "/home/rfelixmg/anaconda2/lib/python2.7/multiprocessing/pool.py", line 230, in _maintain_pool
+    self._repopulate_pool()
+  File "/home/rfelixmg/anaconda2/lib/python2.7/multiprocessing/pool.py", line 223, in _repopulate_pool
+    w.start()
+  File "/home/rfelixmg/anaconda2/lib/python2.7/multiprocessing/process.py", line 130, in start
+    self._popen = Popen(self)
+  File "/home/rfelixmg/anaconda2/lib/python2.7/multiprocessing/forking.py", line 121, in __init__
+    self.pid = os.fork()
+OSError: [Errno 12] Cannot allocate memory
+
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/home/rfelixmg/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/home/rfelixmg/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/home/rfelixmg/anaconda2/lib/python2.7/multiprocessing/pool.py", line 389, in _handle_results
+    task = get()
+MemoryError: <unprintable MemoryError object>
+

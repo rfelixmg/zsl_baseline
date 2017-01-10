@@ -1,0 +1,83 @@
+{
+    "configuration": {
+        "#classes": 50, 
+        "#neighbors": 1, 
+        "baseline_model": "rfr", 
+        "dataset": "./data/awa/", 
+        "dataset_attributes": "./data/cub/attributes/", 
+        "dataset_image": "./data/cub/images/", 
+        "dataset_text": "./data/cub/fine_grained_description/", 
+        "embedding": "./data/cub/features/", 
+        "embedding_attributes": "./data/cub/features/bow_attributes/attributes.txt", 
+        "embedding_image": "./data/cub/features/halah_googlenet/feature.txt", 
+        "embedding_text": "./data/cub/features/bow_text/None", 
+        "estimated_values": false, 
+        "estimation_attributes": "./data/cub/attributes/class_attribute_labels_continuous.txt", 
+        "n_estimators": 100, 
+        "number_epochs": 10, 
+        "output_file": "./experiments/awa/rfr_evaluation_1nn_.txt", 
+        "tag": "awa"
+    }, 
+    "evaluation": {
+        "accuracy_test": 0.0, 
+        "accuracy_train": 1.0, 
+        "coeficient_determination_test": 0.20843813298045039, 
+        "coeficient_determination_train": 1.0, 
+        "precision_test": 0.0, 
+        "precision_train": 1.0, 
+        "recall_test": 0.0, 
+        "recall_train": 1.0, 
+        "~evaluation_per_class": {
+            "5": {
+                "accuracy": 0.0, 
+                "precision": 0.0, 
+                "recall": 0.0
+            }, 
+            "13": {
+                "accuracy": 0.0, 
+                "precision": 0.0, 
+                "recall": 0.0
+            }, 
+            "14": {
+                "accuracy": 0.0, 
+                "precision": 0.0, 
+                "recall": 0.0
+            }, 
+            "17": {
+                "accuracy": 0.0, 
+                "precision": 0.0, 
+                "recall": 0.0
+            }, 
+            "23": {
+                "accuracy": 0.0, 
+                "precision": 0.0, 
+                "recall": 0.0
+            }, 
+            "24": {
+                "accuracy": 0.0, 
+                "precision": 0.0, 
+                "recall": 0.0
+            }, 
+            "33": {
+                "accuracy": 0.0, 
+                "precision": 0.0, 
+                "recall": 0.0
+            }, 
+            "38": {
+                "accuracy": 0.0, 
+                "precision": 0.0, 
+                "recall": 0.0
+            }, 
+            "41": {
+                "accuracy": 0.0, 
+                "precision": 0.0, 
+                "recall": 0.0
+            }, 
+            "47": {
+                "accuracy": 0.0, 
+                "precision": 0.0, 
+                "recall": 0.0
+            }
+        }
+    }
+}

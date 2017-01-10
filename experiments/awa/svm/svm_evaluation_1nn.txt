@@ -1,0 +1,89 @@
+{
+    "configuration": {
+        "#classes": 50, 
+        "#neighbors": 1, 
+        "baseline_model": "svm", 
+        "dataset": "./data/awa/", 
+        "dataset_attributes": "./data/awa/attributes/", 
+        "dataset_image": "./data/awa/images/", 
+        "dataset_text": "./data/awa/fine_grained_description/", 
+        "embedding": "./data/awa/features/", 
+        "embedding_attributes": "./data/awa/features/bow_attributes/feature.txt", 
+        "embedding_image": "./data/awa/features/lampert_vgg/feature.h5", 
+        "embedding_text": "./data/awa/features/bow_text/None", 
+        "estimated_values": false, 
+        "estimation_attributes": "./data/awa//attributes/class_attribute_labels_continuous.txt", 
+        "max_iter": 200, 
+        "n_estimators": 100, 
+        "n_jobs": -2, 
+        "number_epochs": 10, 
+        "output_file": "./experiments/awa/svm_evaluation_1nn.txt", 
+        "tag": "awa"
+    }, 
+    "evaluation": {
+        "accuracy_test": 0.0062881782249371186, 
+        "accuracy_train": 0.084125388411624938, 
+        "accuracy_valid": 0.071074380165289261, 
+        "coeficient_determination_test": 0.0, 
+        "coeficient_determination_train": 0.0, 
+        "coeficient_determination_valid": 0.0, 
+        "precision_test": 0.10659741924564059, 
+        "precision_train": 0.094384221344564687, 
+        "precision_valid": 0.060091601428545728, 
+        "recall_test": 0.0062881782249371186, 
+        "recall_train": 0.084125388411624938, 
+        "recall_valid": 0.071074380165289261, 
+        "~evaluation_per_class": {
+            "5": {
+                "accuracy": 0.88591448077614088, 
+                "precision": 0.59999999999999998, 
+                "recall": 0.037325038880248837
+            }, 
+            "13": {
+                "accuracy": 0.88268056054617317, 
+                "precision": 0.0, 
+                "recall": 0.0
+            }, 
+            "14": {
+                "accuracy": 0.90154509522098458, 
+                "precision": 0.0, 
+                "recall": 0.0
+            }, 
+            "17": {
+                "accuracy": 0.88411785842615886, 
+                "precision": 0.0, 
+                "recall": 0.0
+            }, 
+            "23": {
+                "accuracy": 0.9112468559108875, 
+                "precision": 0.1111111111111111, 
+                "recall": 0.010893246187363835
+            }, 
+            "24": {
+                "accuracy": 0.88663312971613362, 
+                "precision": 0.0, 
+                "recall": 0.0
+            }, 
+            "33": {
+                "accuracy": 0.9500538986704995, 
+                "precision": 0.0, 
+                "recall": 0.0
+            }, 
+            "38": {
+                "accuracy": 0.83542939274164574, 
+                "precision": 0.040540540540540543, 
+                "recall": 0.0035377358490566039
+            }, 
+            "41": {
+                "accuracy": 0.94646065397053536, 
+                "precision": 0.0, 
+                "recall": 0.0
+            }, 
+            "47": {
+                "accuracy": 0.89615522817103843, 
+                "precision": 0.21428571428571427, 
+                "recall": 0.005263157894736842
+            }
+        }
+    }
+}

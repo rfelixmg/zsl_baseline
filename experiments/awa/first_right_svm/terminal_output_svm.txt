@@ -1,0 +1,276 @@
+
+
+
+Initializing application...
+
+
+################################################## 
+
+Configuration: 
+{
+    "#classes": 50, 
+    "#neighbors": 1, 
+    "C": 10.0, 
+    "baseline_model": "svm", 
+    "dataset": "./data/awa/", 
+    "dataset_attributes": "./data/awa/attributes/", 
+    "dataset_image": "./data/awa/images/", 
+    "dataset_text": "./data/awa/fine_grained_description/", 
+    "embedding": "./data/awa/features/", 
+    "embedding_attributes": "./data/awa/features/bow_attributes/feature.txt", 
+    "embedding_image": "./data/awa/features/lampert_vgg/feature.h5", 
+    "embedding_text": "./data/awa/features/bow_text/None", 
+    "estimated_values": false, 
+    "estimation_attributes": "./data/awa//attributes/class_attribute_labels_continuous.txt", 
+    "max_iter": 200, 
+    "n_estimators": 100, 
+    "n_jobs": -2, 
+    "number_epochs": 10, 
+    "output_file": "./experiments/awa/svm_evaluation_1nn.txt", 
+    "tag": "awa"
+}
+################################################## 
+
+-------------------------------------------------- 
+Loading data ...
+--------------------------------------------------
+
+##################################################
+Attributes shape:  (30475, 85)
+CNN shape:  (30475, 4096)
+Time (load dataset): 1.391339
+-------------------------------------------------- 
+Data loaded ...
+--------------------------------------------------
+-------------------------------------------------- 
+Training embedding model
+--------------------------------------------------
+[LibLinear].......................................*
+optimization finished, #iter = 398
+Objective value = -18747.737767
+nSV = 4912
+Time svm(0): 6.120185 
+[LibLinear].......................................**
+optimization finished, #iter = 393
+Objective value = -16189.940921
+nSV = 4475
+Time svm(1): 5.647420 
+[LibLinear].........................**
+optimization finished, #iter = 258
+Objective value = -901.664618
+nSV = 652
+Time svm(2): 1.246794 
+[LibLinear].................................*.*
+optimization finished, #iter = 342
+Objective value = -8161.994156
+nSV = 3034
+Time svm(3): 3.703847 
+[LibLinear]......................................**
+optimization finished, #iter = 388
+Objective value = -15035.652738
+nSV = 4229
+Time svm(4): 5.252354 
+[LibLinear].......................*.*
+optimization finished, #iter = 241
+Objective value = -2041.319546
+nSV = 1295
+Time svm(5): 1.712855 
+[LibLinear].................*.....**
+optimization finished, #iter = 227
+Objective value = -544.507149
+nSV = 508
+Time svm(6): 1.167658 
+[LibLinear]........................*.......*
+optimization finished, #iter = 311
+Objective value = -1761.808592
+nSV = 1172
+Time svm(7): 1.866643 
+[LibLinear]......................................*.*
+optimization finished, #iter = 393
+Objective value = -16828.226377
+nSV = 4527
+Time svm(8): 5.640903 
+[LibLinear]....................................**
+optimization finished, #iter = 368
+Objective value = -10807.275477
+nSV = 3452
+Time svm(9): 4.307470 
+[LibLinear]....................**
+optimization finished, #iter = 204
+Objective value = -519.385661
+nSV = 578
+Time svm(10): 1.157217 
+[LibLinear]...........................*.
+optimization finished, #iter = 280
+Objective value = -2202.711827
+nSV = 1408
+Time svm(11): 1.895056 
+[LibLinear]..............................*.
+optimization finished, #iter = 310
+Objective value = -4678.286548
+nSV = 2207
+Time svm(12): 2.768095 
+[LibLinear]...................................*
+optimization finished, #iter = 356
+Objective value = -9820.211394
+nSV = 3266
+Time svm(13): 4.290538 
+[LibLinear]..............................*.........***.
+optimization finished, #iter = 400
+Objective value = -5509.609496
+nSV = 2422
+Time svm(14): 3.684026 
+[LibLinear]...........................*
+optimization finished, #iter = 276
+Objective value = -4352.955261
+nSV = 2096
+Time svm(15): 2.624489 
+[LibLinear]......................................*
+optimization finished, #iter = 382
+Objective value = -14433.256439
+nSV = 4135
+Time svm(16): 5.271792 
+[LibLinear].....................................*.
+optimization finished, #iter = 380
+Objective value = -14315.580053
+nSV = 4047
+Time svm(17): 5.490810 
+[LibLinear].......................*...........*
+optimization finished, #iter = 344
+Objective value = -1443.450947
+nSV = 1053
+Time svm(18): 1.818880 
+[LibLinear]..............*
+optimization finished, #iter = 145
+Objective value = -374.033386
+nSV = 373
+Time svm(19): 0.877516 
+[LibLinear]..............................**
+optimization finished, #iter = 308
+Objective value = -4176.384699
+nSV = 2038
+Time svm(20): 2.638590 
+[LibLinear]...............................*.**
+optimization finished, #iter = 324
+Objective value = -7293.135018
+nSV = 2754
+Time svm(21): 3.530844 
+[LibLinear].............................*.**
+optimization finished, #iter = 303
+Objective value = -4899.487951
+nSV = 2242
+Time svm(22): 2.917385 
+[LibLinear]..................................*
+optimization finished, #iter = 348
+Objective value = -9176.865371
+nSV = 3201
+Time svm(23): 4.042815 
+[LibLinear].................................*........*.**
+optimization finished, #iter = 426
+Objective value = -6810.995497
+nSV = 2540
+Time svm(24): 3.916042 
+[LibLinear].................................*.*
+optimization finished, #iter = 343
+Objective value = -7741.066237
+nSV = 2877
+Time svm(25): 3.687576 
+[LibLinear]..............................*.*
+optimization finished, #iter = 311
+Objective value = -5479.115384
+nSV = 2418
+Time svm(26): 3.064696 
+[LibLinear]...................................*.................**
+optimization finished, #iter = 529
+Objective value = -10549.100676
+nSV = 3486
+Time svm(27): 6.015533 
+[LibLinear].................................*
+optimization finished, #iter = 331
+Objective value = -8297.407103
+nSV = 2984
+Time svm(28): 3.645839 
+[LibLinear]..........................*.
+optimization finished, #iter = 270
+Objective value = -2137.144609
+nSV = 1254
+Time svm(29): 1.693468 
+[LibLinear]................................**
+optimization finished, #iter = 323
+Objective value = -6065.932062
+nSV = 2451
+Time svm(30): 3.069596 
+[LibLinear].................................*
+optimization finished, #iter = 338
+Objective value = -8710.644389
+nSV = 3089
+Time svm(31): 3.768526 
+[LibLinear].........................*.*
+optimization finished, #iter = 261
+Objective value = -1467.741312
+nSV = 971
+Time svm(32): 1.539926 
+[LibLinear]......................................*
+optimization finished, #iter = 384
+Objective value = -15496.029046
+nSV = 4269
+Time svm(33): 5.648594 
+[LibLinear].................*
+optimization finished, #iter = 171
+Objective value = -574.246631
+nSV = 663
+Time svm(34): 1.031464 
+[LibLinear]..........................*......***.
+optimization finished, #iter = 330
+Objective value = -3225.331582
+nSV = 1680
+Time svm(35): 2.542396 
+[LibLinear].......................*
+optimization finished, #iter = 232
+Objective value = -1858.941313
+nSV = 1231
+Time svm(36): 1.559527 
+[LibLinear].......................*
+optimization finished, #iter = 239
+Objective value = -2444.104523
+nSV = 1395
+Time svm(37): 1.683234 
+[LibLinear].............................*.........*
+optimization finished, #iter = 387
+Objective value = -4047.816979
+nSV = 1981
+Time svm(38): 3.061970 
+[LibLinear]...............................**
+optimization finished, #iter = 316
+Objective value = -5132.069642
+nSV = 2151
+Time svm(39): 2.690729 
+[LibLinear]....................................*
+optimization finished, #iter = 361
+Objective value = -10431.553411
+nSV = 3386
+Time svm(40): 4.179820 
+[LibLinear]...............................*.........*
+optimization finished, #iter = 406
+Objective value = -6413.440098
+nSV = 2610
+Time svm(41): 3.778967 
+[LibLinear]..............................*
+optimization finished, #iter = 303
+Objective value = -5535.221450
+nSV = 2490
+Time svm(42): 2.917885 
+[LibLinear].......................................*
+optimization finished, #iter = 392
+Objective value = -17083.981835
+nSV = 4621
+Time svm(43): 5.821277 
+[LibLinear].............................*
+optimization finished, #iter = 293
+Objective value = -4628.442253
+nSV = 2160
+Time svm(44): 2.654445 
+[LibLinear]..................*
+optimization finished, #iter = 188
+Objective value = -1221.681230
+nSV = 1052
